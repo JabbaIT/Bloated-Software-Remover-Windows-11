@@ -1,8 +1,21 @@
 #Requires -RunAsAdministrator
 
+<# 
+    .SYNOPSIS
+    This script will disable Cloud Optimized Content in Windows 11 
+
+    .DESCRIPTION
+    This script will disable Cloud Optimized Content in Windows 11 by setting the registry key to 1
+
+    .PARAMETER None
+    This script does not have any parameters
+
+    .EXAMPLE
+        Disable-CloudContent.ps1
+#>
+
 [cmdletbinding()]
-param(    
-)
+param()
 
 $registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
 $registryName = "DisableCloudOptimizedContent"

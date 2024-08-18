@@ -1,4 +1,19 @@
 #Requires -RunAsAdministrator
+
+<#  
+    .SYNOPSIS
+    This script will remove the Local State Folder from Windows 11
+
+    .DESCRIPTION
+    This script will remove the Local State Folder from Windows 11
+
+    .PARAMETER None
+
+    .EXAMPLE
+        Remove-LocatStateFolder.ps1
+
+#>
+
 [cmdletbinding()]
 param()
 

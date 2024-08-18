@@ -1,8 +1,21 @@
 #Requires -RunAsAdministrator
+
+<#
+    .SYNOPSIS
+    This script will remove bloated software from Windows 11
+
+    .DESCRIPTION
+    This script will remove bloated software from Windows 11
+
+    .PARAMETER None
+
+    .EXAMPLE
+        Remove-BloatedSoftware.ps1
+
+#>
+
 [cmdletbinding()]
 param()
-
-$Packages = Get-AppxPackage
 
 $AllowList = @(
     '*WindowsCalculator*',
